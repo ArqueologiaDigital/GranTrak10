@@ -29,13 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:grantrak10-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title ""
-Date "12 aug 2016"
+Date "13 aug 2016"
 Rev ""
 Comp ""
 Comment1 ""
