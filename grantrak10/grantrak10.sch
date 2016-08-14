@@ -29,14 +29,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:rc4136d
 LIBS:grantrak10-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
-Date "13 aug 2016"
+Date "14 aug 2016"
 Rev ""
 Comp ""
 Comment1 ""
@@ -55,5 +56,11 @@ S 5500 2200 2500 700
 U 57AEA242
 F0 "Sound Effects" 50
 F1 "sound_effects.sch" 50
+$EndSheet
+$Sheet
+S 2300 3600 2450 500 
+U 57B0DF30
+F0 "Game Logic" 50
+F1 "game_logic.sch" 50
 $EndSheet
 $EndSCHEMATC

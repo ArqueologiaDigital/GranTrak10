@@ -35,7 +35,7 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 4 4
 Title ""
 Date "14 aug 2016"
 Rev ""
@@ -45,16 +45,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 2250 2200 2450 700 
-U 57ADFF35
-F0 "Video Output" 50
-F1 "video_output.sch" 50
-$EndSheet
-$Sheet
-S 5500 2200 2500 700 
-U 57AEA242
-F0 "Sound Effects" 50
-F1 "sound_effects.sch" 50
-$EndSheet
+$Comp
+L 7402 U?
+U 1 1 57B0DFA9
+P 5650 2600
+F 0 "U?" H 5650 2650 60  0000 C CNN
+F 1 "7402" H 5700 2550 60  0000 C CNN
+F 2 "~" H 5650 2600 60  0000 C CNN
+F 3 "~" H 5650 2600 60  0000 C CNN
+	1    5650 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
