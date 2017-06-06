@@ -1,0 +1,21 @@
+GranTrak10 schematics uses 3 op-amps labeled "F9 741". I suppose these are LM741. I'd like to know exactly which IC was used in the original board. This is the pinout based on the pin numbers in the schematics (unit number 2 is unused):
+
+ 1: 1IN-
+ 2: 1IN+
+ 3: 1OUT
+ ?: (2)
+ ?: (2)
+ ?: (2)
+ 7: VCC-
+ 8: 3IN-
+ 9: 3IN+
+10: 3OUT
+11: VCC+
+12: 4OUT
+13: 4IN+
+14: 4IN-
+
+Photos of the PCB seem to indicate the package was DIP14.
+I was not able to find a DIP14 datasheet of quadruple 741-compatible opamps that matches this pinout. Any idea?
+
+
