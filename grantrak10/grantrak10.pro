@@ -1,4 +1,4 @@
-update=Ter 06 Jun 2017 11:19:00 BRT
+update=Qua 07 Jun 2017 16:54:25 BRT
 version=1
 last_client=kicad
 [cvpcb]
@@ -81,3 +81,4 @@ LibName29=valves
 LibName30=rc4136d
 LibName31=lm380n
 LibName32=18v
+LibName33=switches
