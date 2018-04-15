@@ -1,4 +1,37 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rc4136d
+LIBS:lm380n
+LIBS:18v
+LIBS:switches
 LIBS:grantrak10-cache
 EELAYER 26 0
 EELAYER END
@@ -17,7 +50,7 @@ $EndDescr
 Text GLabel 24950 14800 2    60   Output ~ 0
 CLOCK
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E669
 P 19400 14750
 F 0 "#PWR?" H 19400 14750 30  0001 C CNN
@@ -28,7 +61,7 @@ F 3 "" H 19400 14750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:CRYSTAL-RESCUE-grantrak10 X1
+L CRYSTAL X1
 U 1 1 57B0E66F
 P 20300 12650
 F 0 "X1" H 20300 12800 60  0000 C CNN
@@ -39,7 +72,7 @@ F 3 "~" H 20300 12650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R81
+L R R81
 U 1 1 57B0E675
 P 22200 13250
 F 0 "R81" V 22280 13250 40  0000 C CNN
@@ -50,7 +83,7 @@ F 3 "~" H 22200 13250 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R82
+L R R82
 U 1 1 57B0E67B
 P 20050 13250
 F 0 "R82" V 20130 13250 40  0000 C CNN
@@ -61,7 +94,7 @@ F 3 "~" H 20050 13250 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R83
+L R R83
 U 1 1 57B0E681
 P 19400 14300
 F 0 "R83" V 19480 14300 40  0000 C CNN
@@ -72,7 +105,7 @@ F 3 "~" H 19400 14300 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 A8
+L 74LS04 A8
 U 4 1 57B0E687
 P 23850 14300
 F 0 "A8" H 24045 14415 60  0000 C CNN
@@ -83,7 +116,7 @@ F 3 "~" H 23850 14300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 A8
+L 74LS04 A8
 U 3 1 57B0E68D
 P 23850 14800
 F 0 "A8" H 24045 14915 60  0000 C CNN
@@ -94,7 +127,7 @@ F 3 "~" H 23850 14800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C47
+L C C47
 U 1 1 57B0E693
 P 21700 12650
 F 0 "C47" H 21700 12750 40  0000 L CNN
@@ -105,7 +138,7 @@ F 3 "~" H 21700 12650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 A8
+L 74LS04 A8
 U 2 1 57B0E699
 P 22200 14800
 F 0 "A8" H 22395 14915 60  0000 C CNN
@@ -116,7 +149,7 @@ F 3 "~" H 22200 14800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C46
+L C C46
 U 1 1 57B0E69F
 P 21100 13950
 F 0 "C46" H 21100 14050 40  0000 L CNN
@@ -127,7 +160,7 @@ F 3 "~" H 21100 13950 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 A8
+L 74LS04 A8
 U 5 1 57B0E6A5
 P 22200 13950
 F 0 "A8" H 22395 14065 60  0000 C CNN
@@ -138,7 +171,7 @@ F 3 "~" H 22200 13950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 A8
+L 74LS04 A8
 U 6 1 57B0E6AB
 P 20050 13950
 F 0 "A8" H 20245 14065 60  0000 C CNN
@@ -196,7 +229,7 @@ Text GLabel 8050 2900 2    60   Output ~ 0
 Text GLabel 10200 2900 2    60   Output ~ 0
 512H
 $Comp
-L grantrak10-rescue:74LS107-RESCUE-grantrak10 K1
+L 74LS107 K1
 U 2 1 57B0E6CE
 P 9350 3150
 F 0 "K1" H 9350 3250 60  0000 C CNN
@@ -207,7 +240,7 @@ F 3 "~" H 9350 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS107-RESCUE-grantrak10 K1
+L 74LS107 K1
 U 1 1 57B0E6D4
 P 7200 3150
 F 0 "K1" H 7200 3250 60  0000 C CNN
@@ -220,7 +253,7 @@ $EndComp
 Text GLabel 12900 3750 0    60   Input ~ 0
 VSYNC
 $Comp
-L grantrak10-rescue:74HC04-RESCUE-grantrak10 C2
+L 74HC04 C2
 U 3 1 57B0E6DB
 P 15050 3950
 F 0 "C2" H 15200 4050 40  0000 C CNN
@@ -235,7 +268,7 @@ Text GLabel 15650 3950 2    60   Output ~ 0
 Text GLabel 15650 3650 2    60   Output ~ 0
 COMP_SYNC
 $Comp
-L grantrak10-rescue:74LS86-RESCUE-grantrak10 D2
+L 74LS86 D2
 U 2 1 57B0E6E3
 P 13700 3650
 F 0 "D2" H 13750 3700 50  0000 C CNN
@@ -256,7 +289,7 @@ Text GLabel 12900 2850 0    60   Input ~ 0
 Text GLabel 2400 2450 0    60   Input ~ 0
 -HRESET
 $Comp
-L grantrak10-rescue:74LS10-RESCUE-grantrak10 J1
+L 74LS10 J1
 U 2 1 57B0E6EE
 P 13750 2700
 F 0 "J1" H 13750 2750 60  0000 C CNN
@@ -273,7 +306,7 @@ Text GLabel 16150 6500 2    60   Output ~ 0
 Text GLabel 14400 5550 0    60   Input ~ 0
 32H
 $Comp
-L grantrak10-rescue:7402-RESCUE-grantrak10 F1
+L 7402 F1
 U 2 1 57B0E6F7
 P 15200 6500
 F 0 "F1" H 15200 6550 60  0000 C CNN
@@ -284,7 +317,7 @@ F 3 "~" H 15200 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:7402-RESCUE-grantrak10 F1
+L 7402 F1
 U 3 1 57B0E6FD
 P 15200 5650
 F 0 "F1" H 15200 5700 60  0000 C CNN
@@ -319,7 +352,7 @@ P
 Text GLabel 6100 6150 0    60   Input ~ 0
 P
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 H1
+L 74LS74 H1
 U 1 1 57B0E70F
 P 6200 6800
 F 0 "H1" H 6350 7100 60  0000 C CNN
@@ -334,7 +367,7 @@ Text GLabel 3800 6600 0    60   Input ~ 0
 Text GLabel 3800 6450 0    60   Input ~ 0
 256H
 $Comp
-L grantrak10-rescue:74LS10-RESCUE-grantrak10 J1
+L 74LS10 J1
 U 3 1 57B0E717
 P 4550 6600
 F 0 "J1" H 4550 6650 60  0000 C CNN
@@ -345,7 +378,7 @@ F 3 "~" H 4550 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS08-RESCUE-grantrak10 E2
+L 74LS08 E2
 U 1 1 57B0E71D
 P 2950 6750
 F 0 "E2" H 2950 6800 60  0000 C CNN
@@ -360,7 +393,7 @@ Text GLabel 2200 6650 0    60   Input ~ 0
 Text GLabel 2200 6850 0    60   Input ~ 0
 64H
 $Comp
-L grantrak10-rescue:74LS08-RESCUE-grantrak10 E2
+L 74LS08 E2
 U 2 1 57B0E725
 P 3800 8950
 F 0 "E2" H 3800 9000 60  0000 C CNN
@@ -389,7 +422,7 @@ Text GLabel 16150 8650 2    60   Output ~ 0
 Text GLabel 14400 7700 0    60   Input ~ 0
 8V
 $Comp
-L grantrak10-rescue:7402-RESCUE-grantrak10 F1
+L 7402 F1
 U 1 1 57B0E734
 P 15200 8650
 F 0 "F1" H 15200 8700 60  0000 C CNN
@@ -400,7 +433,7 @@ F 3 "~" H 15200 8650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:7402-RESCUE-grantrak10 F1
+L 7402 F1
 U 4 1 57B0E73A
 P 15200 7800
 F 0 "F1" H 15200 7850 60  0000 C CNN
@@ -411,7 +444,7 @@ F 3 "~" H 15200 7800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 H1
+L 74LS74 H1
 U 2 1 57B0E740
 P 5400 9150
 F 0 "H1" H 5550 9450 60  0000 C CNN
@@ -444,7 +477,7 @@ Text GLabel 10000 8400 2    60   Output ~ 0
 Text GLabel 10000 8550 2    60   Output ~ 0
 8V
 $Comp
-L grantrak10-rescue:74LS93-RESCUE-grantrak10 J2
+L 74LS93 J2
 U 1 1 57B0E752
 P 12150 7000
 F 0 "J2" H 12200 6850 60  0000 C CNN
@@ -455,7 +488,7 @@ F 3 "~" H 12150 7000 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L grantrak10-rescue:74LS93-RESCUE-grantrak10 H2
+L 74LS93 H2
 U 1 1 57B0E758
 P 10950 7000
 F 0 "H2" H 11000 6850 60  0000 C CNN
@@ -466,7 +499,7 @@ F 3 "~" H 10950 7000 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L grantrak10-rescue:74LS93-RESCUE-grantrak10 F3
+L 74LS93 F3
 U 1 1 57B0E75E
 P 9750 7000
 F 0 "F3" H 9800 6850 60  0000 C CNN
@@ -477,7 +510,7 @@ F 3 "~" H 9750 7000 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L grantrak10-rescue:74LS161-RESCUE-grantrak10 K2
+L 74LS161 K2
 U 1 1 57B0E764
 P 5200 3300
 F 0 "K2" H 5250 3400 60  0000 C CNN
@@ -488,7 +521,7 @@ F 3 "~" H 5200 3300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L grantrak10-rescue:74LS161-RESCUE-grantrak10 L2
+L 74LS161 L2
 U 1 1 57B0E76A
 P 3450 3300
 F 0 "L2" H 3500 3400 60  0000 C CNN
@@ -499,7 +532,7 @@ F 3 "~" H 3450 3300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:-5V #PWR?
+L -5V #PWR?
 U 1 1 57B0E8CF
 P 27800 3300
 F 0 "#PWR?" H 27800 3440 20  0001 C CNN
@@ -510,7 +543,7 @@ F 3 "" H 27800 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R17
+L R R17
 U 1 1 57B0E8D5
 P 27800 3700
 F 0 "R17" V 27880 3700 40  0000 C CNN
@@ -521,7 +554,7 @@ F 3 "~" H 27800 3700 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:BC413B-RESCUE-grantrak10 Q1
+L BC413B Q1
 U 1 1 57B0E8DB
 P 28100 4500
 F 0 "Q1" H 28100 4351 40  0000 R CNN
@@ -532,7 +565,7 @@ F 3 "" H 28100 4500 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L device:CP1 C11
+L CP1 C11
 U 1 1 57B0E8E9
 P 27800 5050
 F 0 "C11" H 27850 5150 50  0000 L CNN
@@ -543,7 +576,7 @@ F 3 "~" H 27800 5050 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E8EF
 P 27800 5550
 F 0 "#PWR?" H 27800 5550 30  0001 C CNN
@@ -554,7 +587,7 @@ F 3 "" H 27800 5550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R18
+L R R18
 U 1 1 57B0E8F7
 P 28500 4250
 F 0 "R18" V 28580 4250 40  0000 C CNN
@@ -565,7 +598,7 @@ F 3 "~" H 28500 4250 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R28
+L R R28
 U 1 1 57B0E8FD
 P 29100 4400
 F 0 "R28" V 29180 4400 40  0000 C CNN
@@ -576,7 +609,7 @@ F 3 "~" H 29100 4400 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E903
 P 28750 4450
 F 0 "#PWR?" H 28750 4450 30  0001 C CNN
@@ -587,7 +620,7 @@ F 3 "" H 28750 4450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C14
+L C C14
 U 1 1 57B0E90D
 P 29100 4600
 F 0 "C14" H 29100 4700 40  0000 L CNN
@@ -598,7 +631,7 @@ F 3 "~" H 29100 4600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 57B0E919
 P 28500 3950
 F 0 "#PWR?" H 28500 4050 30  0001 C CNN
@@ -609,7 +642,7 @@ F 3 "" H 28500 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:POT R35
+L POT R35
 U 1 1 57B0E920
 P 29950 3650
 F 0 "R35" H 29950 3550 50  0000 C CNN
@@ -620,7 +653,7 @@ F 3 "~" H 29950 3650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R29
+L R R29
 U 1 1 57B0E932
 P 29450 5000
 F 0 "R29" V 29530 5000 40  0000 C CNN
@@ -631,7 +664,7 @@ F 3 "~" H 29450 5000 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E93A
 P 29450 5350
 F 0 "#PWR?" H 29450 5350 30  0001 C CNN
@@ -642,7 +675,7 @@ F 3 "" H 29450 5350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C26
+L C C26
 U 1 1 57B0E941
 P 31700 4500
 F 0 "C26" H 31700 4600 40  0000 L CNN
@@ -653,7 +686,7 @@ F 3 "~" H 31700 4500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:C C12
+L C C12
 U 1 1 57B0E947
 P 31050 6200
 F 0 "C12" H 31050 6300 40  0000 L CNN
@@ -664,7 +697,7 @@ F 3 "~" H 31050 6200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R34
+L R R34
 U 1 1 57B0E950
 P 31550 6200
 F 0 "R34" V 31630 6200 40  0000 C CNN
@@ -675,7 +708,7 @@ F 3 "~" H 31550 6200 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R38
+L R R38
 U 1 1 57B0E957
 P 32200 6200
 F 0 "R38" V 32280 6200 40  0000 C CNN
@@ -686,7 +719,7 @@ F 3 "~" H 32200 6200 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R41
+L R R41
 U 1 1 57B0E95F
 P 32350 4500
 F 0 "R41" V 32430 4500 40  0000 C CNN
@@ -697,7 +730,7 @@ F 3 "~" H 32350 4500 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R42
+L R R42
 U 1 1 57B0E967
 P 32350 5050
 F 0 "R42" V 32430 5050 40  0000 C CNN
@@ -708,7 +741,7 @@ F 3 "~" H 32350 5050 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:C C25
+L C C25
 U 1 1 57B0E972
 P 32350 4200
 F 0 "C25" H 32350 4300 40  0000 L CNN
@@ -719,7 +752,7 @@ F 3 "~" H 32350 4200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E97A
 P 32050 4300
 F 0 "#PWR?" H 32050 4300 30  0001 C CNN
@@ -730,7 +763,7 @@ F 3 "" H 32050 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E984
 P 32050 5200
 F 0 "#PWR?" H 32050 5200 30  0001 C CNN
@@ -741,7 +774,7 @@ F 3 "" H 32050 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R43
+L R R43
 U 1 1 57B0E98C
 P 33550 5050
 F 0 "R43" V 33630 5050 40  0000 C CNN
@@ -752,7 +785,7 @@ F 3 "~" H 33550 5050 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R44
+L R R44
 U 1 1 57B0E998
 P 33550 3450
 F 0 "R44" V 33630 3450 40  0000 C CNN
@@ -763,7 +796,7 @@ F 3 "~" H 33550 3450 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L grantrak10-rescue:DIODE-RESCUE-grantrak10 CR10
+L DIODE CR10
 U 1 1 57B0E9A4
 P 32350 3450
 F 0 "CR10" H 32350 3550 40  0000 C CNN
@@ -776,7 +809,7 @@ $EndComp
 Text GLabel 31850 3450 0    60   Input ~ 0
 CRASH_A
 $Comp
-L device:R R40
+L R R40
 U 1 1 57B0E9AD
 P 34950 4300
 F 0 "R40" V 35030 4300 40  0000 C CNN
@@ -787,7 +820,7 @@ F 3 "~" H 34950 4300 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:C C24
+L C C24
 U 1 1 57B0E9B3
 P 31900 6750
 F 0 "C24" H 31900 6850 40  0000 L CNN
@@ -798,7 +831,7 @@ F 3 "~" H 31900 6750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E9BB
 P 31900 7050
 F 0 "#PWR?" H 31900 7050 30  0001 C CNN
@@ -809,7 +842,7 @@ F 3 "" H 31900 7050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:DIODE-RESCUE-grantrak10 CR9
+L DIODE CR9
 U 1 1 57B0E9C3
 P 32350 7600
 F 0 "CR9" H 32350 7700 40  0000 C CNN
@@ -820,7 +853,7 @@ F 3 "~" H 32350 7600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R37
+L R R37
 U 1 1 57B0E9D0
 P 32500 6750
 F 0 "R37" V 32580 6750 40  0000 C CNN
@@ -831,7 +864,7 @@ F 3 "~" H 32500 6750 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0E9D8
 P 32500 7100
 F 0 "#PWR?" H 32500 7100 30  0001 C CNN
@@ -842,7 +875,7 @@ F 3 "" H 32500 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L R R?
 U 1 1 57B0E9E0
 P 33350 5550
 F 0 "R?" V 33430 5550 40  0000 C CNN
@@ -853,7 +886,7 @@ F 3 "~" H 33350 5550 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R?
+L R R?
 U 1 1 57B0E9E6
 P 34600 5950
 F 0 "R?" V 34680 5950 40  0000 C CNN
@@ -864,7 +897,7 @@ F 3 "~" H 34600 5950 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R39
+L R R39
 U 1 1 57B0E9EC
 P 35000 6300
 F 0 "R39" V 35080 6300 40  0000 C CNN
@@ -875,7 +908,7 @@ F 3 "~" H 35000 6300 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R36
+L R R36
 U 1 1 57B0E9FC
 P 33100 6750
 F 0 "R36" V 33180 6750 40  0000 C CNN
@@ -886,7 +919,7 @@ F 3 "~" H 33100 6750 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0EA02
 P 33100 7100
 F 0 "#PWR?" H 33100 7100 30  0001 C CNN
@@ -897,7 +930,7 @@ F 3 "" H 33100 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 57B0EA0B
 P 33600 5800
 F 0 "#PWR?" H 33600 5900 30  0001 C CNN
@@ -908,7 +941,7 @@ F 3 "" H 33600 5800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-5V #PWR?
+L -5V #PWR?
 U 1 1 57B0EA12
 P 33600 6800
 F 0 "#PWR?" H 33600 6940 20  0001 C CNN
@@ -919,7 +952,7 @@ F 3 "" H 33600 6800 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:CP1 C?
+L CP1 C?
 U 1 1 57B0EA1D
 P 34300 6700
 F 0 "C?" H 34350 6800 50  0000 L CNN
@@ -930,7 +963,7 @@ F 3 "~" H 34300 6700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B0EA23
 P 34300 7050
 F 0 "#PWR?" H 34300 7050 30  0001 C CNN
@@ -943,7 +976,7 @@ $EndComp
 Text GLabel 35700 6800 2    60   Output ~ 0
 72046_PIN13
 $Comp
-L rc4136d:RC4136D F9
+L RC4136D F9
 U 3 1 57B0EA2F
 P 33700 6300
 F 0 "F9" H 33850 6450 60  0000 C CNN
@@ -954,7 +987,7 @@ F 3 "" H 33700 6300 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 57B0EA35
 P 33350 3800
 F 0 "#PWR?" H 33350 3900 30  0001 C CNN
@@ -965,7 +998,7 @@ F 3 "" H 33350 3800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-5V #PWR?
+L -5V #PWR?
 U 1 1 57B0EA3B
 P 33350 4800
 F 0 "#PWR?" H 33350 4940 20  0001 C CNN
@@ -976,7 +1009,7 @@ F 3 "" H 33350 4800 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L rc4136d:RC4136D F9
+L RC4136D F9
 U 4 1 57B0EA42
 P 33450 4300
 F 0 "F9" H 33600 4450 60  0000 C CNN
@@ -987,7 +1020,7 @@ F 3 "" H 33450 4300 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 57B0EA48
 P 29950 4000
 F 0 "#PWR?" H 29950 4100 30  0001 C CNN
@@ -998,7 +1031,7 @@ F 3 "" H 29950 4000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-5V #PWR?
+L -5V #PWR?
 U 1 1 57B0EA4F
 P 29950 5000
 F 0 "#PWR?" H 29950 5140 20  0001 C CNN
@@ -1009,7 +1042,7 @@ F 3 "" H 29950 5000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L rc4136d:RC4136D F9
+L RC4136D F9
 U 1 1 57B0EA56
 P 30050 4500
 F 0 "F9" H 30200 4650 60  0000 C CNN
@@ -1020,7 +1053,7 @@ F 3 "" H 30050 4500 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L grantrak10-rescue:7402-RESCUE-grantrak10 C6
+L 7402 C6
 U 1 1 57B0EC54
 P 19400 9200
 F 0 "C6" H 19400 9250 60  0000 C CNN
@@ -1035,7 +1068,7 @@ Text GLabel 18400 9100 0    60   Input ~ 0
 Text GLabel 18400 9300 0    60   Input ~ 0
 -CAR_1_VIDEO
 $Comp
-L grantrak10-rescue:74HC04-RESCUE-grantrak10 C2
+L 74HC04 C2
 U 6 1 57B0EEDB
 P 20600 9200
 F 0 "C2" H 20750 9300 40  0000 C CNN
@@ -1046,7 +1079,7 @@ F 3 "~" H 20600 9200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:JUMPER-RESCUE-grantrak10 JP1
+L JUMPER JP1
 U 1 1 57B0F03D
 P 21650 9200
 F 0 "JP1" H 21650 9350 60  0000 C CNN
@@ -1059,7 +1092,7 @@ $EndComp
 Text Notes 21250 9450 0    60   ~ 0
 REMOVE JUMPER TO\nDISABLE SLICK
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 C1
+L 74LS74 C1
 U 1 1 57B0F2B6
 P 22100 8150
 F 0 "C1" H 22250 8450 60  0000 C CNN
@@ -1070,7 +1103,7 @@ F 3 "~" H 22100 8150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 C1
+L 74LS74 C1
 U 2 1 57B0F428
 P 23800 8150
 F 0 "C1" H 23950 8450 60  0000 C CNN
@@ -1111,7 +1144,7 @@ C2-1
 Text GLabel 18800 5250 0    60   Input ~ 0
 -HSYNC
 $Comp
-L device:C C9
+L C C9
 U 1 1 57B107F0
 P 19150 5250
 F 0 "C9" H 19150 5350 40  0000 L CNN
@@ -1122,7 +1155,7 @@ F 3 "~" H 19150 5250 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R1
+L R R1
 U 1 1 57B107FF
 P 19450 4950
 F 0 "R1" V 19530 4950 40  0000 C CNN
@@ -1133,7 +1166,7 @@ F 3 "~" H 19450 4950 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R2
+L R R2
 U 1 1 57B1080C
 P 19450 5550
 F 0 "R2" V 19530 5550 40  0000 C CNN
@@ -1144,7 +1177,7 @@ F 3 "~" H 19450 5550 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B10814
 P 19450 5800
 F 0 "#PWR?" H 19450 5800 30  0001 C CNN
@@ -1155,7 +1188,7 @@ F 3 "" H 19450 5800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 57B10823
 P 19450 4700
 F 0 "#PWR?" H 19450 4800 30  0001 C CNN
@@ -1166,7 +1199,7 @@ F 3 "" H 19450 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B10830
 P 22500 4750
 F 0 "#PWR?" H 22500 4750 30  0001 C CNN
@@ -1181,7 +1214,7 @@ Text GLabel 22350 4350 0    60   Input ~ 0
 Text GLabel 20000 4350 0    60   Input ~ 0
 1H
 $Comp
-L grantrak10-rescue:74LS107-RESCUE-grantrak10 L1
+L 74LS107 L1
 U 1 1 57B10837
 P 20900 4350
 F 0 "L1" H 20900 4450 60  0000 C CNN
@@ -1192,7 +1225,7 @@ F 3 "~" H 20900 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS107-RESCUE-grantrak10 L1
+L 74LS107 L1
 U 2 1 57B1083D
 P 23250 4350
 F 0 "L1" H 23250 4450 60  0000 C CNN
@@ -1212,7 +1245,7 @@ A2-2
 Text GLabel 9150 11800 0    60   Input ~ 0
 -HSYNC
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 D1
+L 74LS74 D1
 U 1 1 57B1204F
 P 9300 10700
 F 0 "D1" H 9450 11000 60  0000 C CNN
@@ -1223,7 +1256,7 @@ F 3 "~" H 9300 10700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74HC04-RESCUE-grantrak10 E1
+L 74HC04 E1
 U 6 1 57B121C0
 P 6300 5050
 F 0 "E1" H 6450 5150 40  0000 C CNN
@@ -1253,7 +1286,7 @@ NoConn ~ 9900 10900
 Text GLabel 11250 9950 2    60   Output ~ 0
 LD1B
 $Comp
-L grantrak10-rescue:74HC04-RESCUE-grantrak10 E1
+L 74HC04 E1
 U 4 1 57B13E18
 P 10650 9950
 F 0 "E1" H 10800 10050 40  0000 C CNN
@@ -1264,7 +1297,7 @@ F 3 "~" H 10650 9950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 B2
+L 74LS74 B2
 U 2 1 57B144A2
 P 5700 12450
 F 0 "B2" H 5850 12750 60  0000 C CNN
@@ -1275,7 +1308,7 @@ F 3 "~" H 5700 12450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 B2
+L 74LS74 B2
 U 1 1 57B144A8
 P 4100 12450
 F 0 "B2" H 4250 12750 60  0000 C CNN
@@ -1294,7 +1327,7 @@ Text GLabel 2600 13450 0    60   Input ~ 0
 Text GLabel 2600 13250 0    60   Input ~ 0
 VLD1
 $Comp
-L grantrak10-rescue:74HC00-RESCUE-grantrak10 A2
+L 74HC00 A2
 U 4 1 57B14AB2
 P 3350 13350
 F 0 "A2" H 3350 13400 60  0000 C CNN
@@ -1319,7 +1352,7 @@ B4-1
 Text Notes 3000 12150 0    60   ~ 0
 C2-1
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 A4
+L 74LS74 A4
 U 1 1 57B15743
 P 16050 13750
 F 0 "A4" H 16200 14050 60  0000 C CNN
@@ -1338,7 +1371,7 @@ Text GLabel 16800 13550 2    60   Output ~ 0
 Text GLabel 16800 13950 2    60   Output ~ 0
 RESET_1
 $Comp
-L grantrak10-rescue:74LS08-RESCUE-grantrak10 A6
+L 74LS08 A6
 U 2 1 57B16327
 P 15300 14500
 F 0 "A6" H 15300 14550 60  0000 C CNN
@@ -1349,7 +1382,7 @@ F 3 "~" H 15300 14500 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L grantrak10-rescue:74HC00-RESCUE-grantrak10 A2
+L 74HC00 A2
 U 2 1 57B16505
 P 13750 14100
 F 0 "A2" H 13750 14150 60  0000 C CNN
@@ -1370,7 +1403,7 @@ Text GLabel 14500 14600 0    60   Input ~ 0
 Text Notes 14150 14800 0    60   ~ 0
 C2-1
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 B1
+L 74LS74 B1
 U 2 1 57B173CA
 P 14150 11000
 F 0 "B1" H 14300 11300 60  0000 C CNN
@@ -1381,7 +1414,7 @@ F 3 "~" H 14150 11000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 B1
+L 74LS74 B1
 U 1 1 57B173D7
 P 16000 11000
 F 0 "B1" H 16150 11300 60  0000 C CNN
@@ -1394,7 +1427,7 @@ $EndComp
 Text GLabel 13900 12000 0    60   Input ~ 0
 -H_SYNC
 $Comp
-L grantrak10-rescue:74HC04-RESCUE-grantrak10 E1
+L 74HC04 E1
 U 5 1 57B173DF
 P 14500 12000
 F 0 "E1" H 14650 12100 40  0000 C CNN
@@ -1417,7 +1450,7 @@ P
 Text GLabel 13300 11000 0    60   Input ~ 0
 -V_RESET
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 57B182BE
 P 13450 10850
 F 0 "#PWR?" H 13450 10850 30  0001 C CNN
@@ -1439,7 +1472,7 @@ I2 or J2 (?)
 Text GLabel 8950 6200 0    60   Input ~ 0
 HBLANK
 $Comp
-L device:R R63
+L R R63
 U 1 1 5936F934
 P 8700 13000
 F 0 "R63" V 8780 13000 40  0000 C CNN
@@ -1450,7 +1483,7 @@ F 3 "~" H 8700 13000 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R73
+L R R73
 U 1 1 59370447
 P 8700 13300
 F 0 "R73" V 8780 13300 40  0000 C CNN
@@ -1461,7 +1494,7 @@ F 3 "~" H 8700 13300 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R64
+L R R64
 U 1 1 59370958
 P 8700 13600
 F 0 "R64" V 8780 13600 40  0000 C CNN
@@ -1472,7 +1505,7 @@ F 3 "~" H 8700 13600 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R74
+L R R74
 U 1 1 59370A73
 P 8700 13900
 F 0 "R74" V 8780 13900 40  0000 C CNN
@@ -1483,7 +1516,7 @@ F 3 "~" H 8700 13900 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R66
+L R R66
 U 1 1 59370BA3
 P 8700 14200
 F 0 "R66" V 8780 14200 40  0000 C CNN
@@ -1494,7 +1527,7 @@ F 3 "~" H 8700 14200 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R65
+L R R65
 U 1 1 59370FCF
 P 8700 14500
 F 0 "R65" V 8780 14500 40  0000 C CNN
@@ -1505,7 +1538,7 @@ F 3 "~" H 8700 14500 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 593739FB
 P 8300 12900
 F 0 "#PWR?" H 8300 13000 30  0001 C CNN
@@ -1526,7 +1559,7 @@ RT
 Text GLabel 8250 14500 0    60   Input ~ 0
 -SLICK
 $Comp
-L device:CP1 C44
+L CP1 C44
 U 1 1 5937811E
 P 9600 14500
 F 0 "C44" H 9650 14600 50  0000 L CNN
@@ -1569,7 +1602,7 @@ CRASH_A
 Text Notes 30200 8350 0    60   ~ 12
 D2-2
 $Comp
-L grantrak10-rescue:DIODE-RESCUE-grantrak10 CR11
+L DIODE CR11
 U 1 1 59373008
 P 31450 8300
 F 0 "CR11" H 31450 8400 40  0000 C CNN
@@ -1580,7 +1613,7 @@ F 3 "~" H 31450 8300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:DIODE-RESCUE-grantrak10 CR12
+L DIODE CR12
 U 1 1 5937314E
 P 31450 7950
 F 0 "CR12" H 31450 8050 40  0000 C CNN
@@ -1591,7 +1624,7 @@ F 3 "~" H 31450 7950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:2N3906-RESCUE-grantrak10 Q5
+L 2N3906 Q5
 U 1 1 5937480A
 P 32450 8300
 F 0 "Q5" H 32641 8254 50  0000 L CNN
@@ -1602,7 +1635,7 @@ F 3 "" H -6300 -22800 50  0001 L CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R52
+L R R52
 U 1 1 59374C79
 P 32950 8300
 F 0 "R52" V 33030 8300 40  0000 C CNN
@@ -1613,7 +1646,7 @@ F 3 "~" H 32950 8300 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R53
+L R R53
 U 1 1 59374DC0
 P 32950 8700
 F 0 "R53" V 33030 8700 40  0000 C CNN
@@ -1624,7 +1657,7 @@ F 3 "~" H 32950 8700 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 59375329
 P 33350 8400
 F 0 "#PWR?" H 33350 8400 30  0001 C CNN
@@ -1635,7 +1668,7 @@ F 3 "" H 33350 8400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-5V #PWR?
+L -5V #PWR?
 U 1 1 5937566B
 P 33350 8800
 F 0 "#PWR?" H 33350 8940 20  0001 C CNN
@@ -1650,7 +1683,7 @@ Text GLabel 30950 8700 0    60   Input ~ 0
 Text GLabel 43650 5500 2    60   Output ~ 0
 AUDIO_OUT
 $Comp
-L device:C C1
+L C C1
 U 1 1 5937A550
 P 43200 5500
 F 0 "C1" H 43200 5600 40  0000 L CNN
@@ -1665,7 +1698,7 @@ Text Notes 43050 5400 0    60   ~ 0
 Text Notes 43350 5400 0    60   ~ 0
 (?)
 $Comp
-L device:C C3
+L C C3
 U 1 1 5937B101
 P 42800 6250
 F 0 "C3" H 42800 6350 40  0000 L CNN
@@ -1676,7 +1709,7 @@ F 3 "~" H 42800 6250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R3
+L R R3
 U 1 1 5937B313
 P 42800 5850
 F 0 "R3" H 42870 5896 50  0000 L CNN
@@ -1687,7 +1720,7 @@ F 3 "" H 2000 -18350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 5937B5EC
 P 42800 6550
 F 0 "#PWR?" H 42850 6600 50  0001 C CNN
@@ -1698,7 +1731,7 @@ F 3 "" H 1200 -17900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:LM380N-RESCUE-grantrak10 L8
+L LM380N L8
 U 1 1 5937C781
 P 41700 5250
 F 0 "L8" H 41700 5887 60  0000 C CNN
@@ -1709,7 +1742,7 @@ F 3 "" H 1550 -18950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C51
+L C C51
 U 1 1 5937CFE9
 P 43350 4550
 F 0 "C51" H 43350 4650 40  0000 L CNN
@@ -1720,7 +1753,7 @@ F 3 "~" H 43350 4550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 5937CFEF
 P 43350 4850
 F 0 "#PWR?" H 43400 4900 50  0001 C CNN
@@ -1731,7 +1764,7 @@ F 3 "" H 1750 -19600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 18v:+18V #PWR?
+L +18V #PWR?
 U 1 1 5937DC70
 P 42850 3950
 F 0 "#PWR?" H 42900 4000 50  0001 C CNN
@@ -1742,7 +1775,7 @@ F 3 "" H -2150 -17200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C8
+L C C8
 U 1 1 5937E60F
 P 40050 4550
 F 0 "C8" H 40050 4650 40  0000 L CNN
@@ -1753,7 +1786,7 @@ F 3 "~" H 40050 4550 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:POT R4
+L POT R4
 U 1 1 5937F0AB
 P 40500 5000
 F 0 "R4" H 40350 4900 50  0000 C CNN
@@ -1764,7 +1797,7 @@ F 3 "~" H 40500 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R16
+L R R16
 U 1 1 5937FE2D
 P 39550 5000
 F 0 "R16" H 39620 5046 50  0000 L CNN
@@ -1777,7 +1810,7 @@ $EndComp
 Text GLabel 38700 5350 0    60   Input ~ 0
 72046_PIN12
 $Comp
-L device:C C10
+L C C10
 U 1 1 59380814
 P 39100 5350
 F 0 "C10" H 39100 5450 40  0000 L CNN
@@ -1788,7 +1821,7 @@ F 3 "~" H 39100 5350 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 593812AC
 P 40500 5800
 F 0 "#PWR?" H 40550 5850 50  0001 C CNN
@@ -1799,7 +1832,7 @@ F 3 "" H -1850 -18150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C7
+L C C7
 U 1 1 5938284E
 P 40800 6250
 F 0 "C7" H 40800 6350 40  0000 L CNN
@@ -1810,7 +1843,7 @@ F 3 "~" H 40800 6250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 59382854
 P 40800 6550
 F 0 "#PWR?" H 40850 6600 50  0001 C CNN
@@ -1826,7 +1859,7 @@ NoConn ~ 42200 5000
 Text Notes 41000 5450 0    60   ~ 12
 (?)
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 59383CE6
 P 42300 5750
 F 0 "#PWR?" H 42350 5800 50  0001 C CNN
@@ -1839,7 +1872,7 @@ $EndComp
 Text Notes 40700 6200 0    60   ~ 0
 +
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 B6
+L 74LS04 B6
 U 6 1 59381AF7
 P 3400 21100
 F 0 "B6" H 3595 21215 60  0000 C CNN
@@ -1854,7 +1887,7 @@ pin_M
 Text GLabel 2650 21900 3    60   Input ~ 0
 pin_L
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 B6
+L 74LS04 B6
 U 2 1 593843CA
 P 3400 21750
 F 0 "B6" H 3595 21865 60  0000 C CNN
@@ -1869,7 +1902,7 @@ Text GLabel 4400 20800 0    60   Input ~ 0
 Text GLabel 5150 20150 0    60   Input ~ 0
 P
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 A7
+L 74LS74 A7
 U 1 1 59386C7D
 P 5250 20800
 F 0 "A7" H 5400 21100 60  0000 C CNN
@@ -1882,7 +1915,7 @@ $EndComp
 Text GLabel 7400 20150 0    60   Input ~ 0
 P
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 A7
+L 74LS74 A7
 U 2 1 593883DC
 P 7500 20800
 F 0 "A7" H 7650 21100 60  0000 C CNN
@@ -1893,7 +1926,7 @@ F 3 "~" H 7500 20800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS08-RESCUE-grantrak10 A6
+L 74LS08 A6
 U 1 1 59388D0F
 P 9050 19800
 F 0 "A6" H 9050 19850 60  0000 C CNN
@@ -1904,7 +1937,7 @@ F 3 "~" H 9050 19800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 B6
+L 74LS04 B6
 U 5 1 5938ACE1
 P 10300 19800
 F 0 "B6" H 10495 19915 60  0000 C CNN
@@ -1921,7 +1954,7 @@ Text GLabel 10400 21550 0    60   Input ~ 0
 Text GLabel 10900 20450 0    60   Input ~ 0
 P
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 B7
+L 74LS74 B7
 U 2 1 5938D2EB
 P 11600 20650
 F 0 "B7" H 11750 20950 60  0000 C CNN
@@ -1934,7 +1967,7 @@ $EndComp
 Text GLabel 13000 20000 0    60   Input ~ 0
 Q
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 B7
+L 74LS74 B7
 U 1 1 5938D2FA
 P 13100 20650
 F 0 "B7" H 13250 20950 60  0000 C CNN
@@ -1951,7 +1984,7 @@ C2-1
 NoConn ~ 13700 20450
 NoConn ~ 12200 20850
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 B6
+L 74LS04 B6
 U 1 1 5938F3CA
 P 14750 20850
 F 0 "B6" H 14945 20965 60  0000 C CNN
@@ -1962,7 +1995,7 @@ F 3 "~" H 14750 20850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:7402-RESCUE-grantrak10 C6
+L 7402 C6
 U 4 1 5938F804
 P 16050 21650
 F 0 "C6" H 16050 21700 60  0000 C CNN
@@ -1973,7 +2006,7 @@ F 3 "~" H 16050 21650 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L device:R R59
+L R R59
 U 1 1 59393416
 P 14800 21350
 F 0 "R59" V 14880 21350 40  0000 C CNN
@@ -1988,7 +2021,7 @@ LED
 Text Notes 13800 21400 0    60   ~ 12
 (pin 10)
 $Comp
-L device:R R?
+L R R?
 U 1 1 59395BF0
 P 15150 20050
 F 0 "R?" V 15230 20050 40  0000 C CNN
@@ -2003,7 +2036,7 @@ START
 Text Notes 14150 20400 0    60   ~ 12
 (pin N)
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 593969A7
 P 15150 19750
 F 0 "#PWR?" H 15200 19800 50  0001 C CNN
@@ -2014,7 +2047,7 @@ F 3 "" H 850 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:74LS08-RESCUE-grantrak10 A6
+L 74LS08 A6
 U 4 1 593977F0
 P 16400 20250
 F 0 "A6" H 16400 20300 60  0000 C CNN
@@ -2029,7 +2062,7 @@ ATRC
 Text GLabel 17100 20450 0    60   Input ~ 0
 512V
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 C7
+L 74LS74 C7
 U 2 1 59398857
 P 17800 20450
 F 0 "C7" H 17950 20750 60  0000 C CNN
@@ -2044,7 +2077,7 @@ START
 Text GLabel 19650 19850 0    60   Input ~ 0
 END_GAME
 $Comp
-L grantrak10-rescue:74LS74-RESCUE-grantrak10 C7
+L 74LS74 C7
 U 1 1 59399D8D
 P 20450 19850
 F 0 "C7" H 20600 20150 60  0000 C CNN
@@ -2065,7 +2098,7 @@ P
 Text Notes 19250 20000 0    60   ~ 12
 C4-2
 $Comp
-L grantrak10-rescue:2N3906-RESCUE-grantrak10 Q6
+L 2N3906 Q6
 U 1 1 5939E941
 P 22100 18000
 F 0 "Q6" H 22291 17954 50  0000 L CNN
@@ -2076,7 +2109,7 @@ F 3 "" H -16650 -13100 50  0001 L CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L grantrak10-rescue:BC413B-RESCUE-grantrak10 Q7
+L BC413B Q7
 U 1 1 5939EAE3
 P 21900 21500
 F 0 "Q7" H 21900 21351 40  0000 R CNN
@@ -2087,7 +2120,7 @@ F 3 "" H 21900 21500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:BC413B-RESCUE-grantrak10 Q8
+L BC413B Q8
 U 1 1 5939FE1E
 P 23650 19900
 F 0 "Q8" H 23650 19751 40  0000 R CNN
@@ -2098,7 +2131,7 @@ F 3 "" H 23650 19900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:DIODE-RESCUE-grantrak10 CR15
+L DIODE CR15
 U 1 1 593A1B36
 P 21450 21850
 F 0 "CR15" H 21450 21950 40  0000 C CNN
@@ -2111,7 +2144,7 @@ $EndComp
 Text GLabel 20950 21500 0    60   Input ~ 0
 ANT
 $Comp
-L device:R R76
+L R R76
 U 1 1 593A3FE9
 P 22450 20850
 F 0 "R76" V 22530 20850 40  0000 C CNN
@@ -2122,7 +2155,7 @@ F 3 "~" H 22450 20850 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C45
+L C C45
 U 1 1 593A6311
 P 23050 20850
 F 0 "C45" H 23050 20950 40  0000 L CNN
@@ -2133,7 +2166,7 @@ F 3 "~" H 23050 20850 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R77
+L R R77
 U 1 1 593A73C0
 P 22000 19300
 F 0 "R77" V 22080 19300 40  0000 C CNN
@@ -2144,7 +2177,7 @@ F 3 "~" H 22000 19300 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R67
+L R R67
 U 1 1 593A7564
 P 22000 18550
 F 0 "R67" V 22080 18550 40  0000 C CNN
@@ -2155,7 +2188,7 @@ F 3 "~" H 22000 18550 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:DIODE-RESCUE-grantrak10 CR14
+L DIODE CR14
 U 1 1 593A8661
 P 19750 18950
 F 0 "CR14" H 19750 19050 40  0000 C CNN
@@ -2166,7 +2199,7 @@ F 3 "~" H 19750 18950 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R75
+L R R75
 U 1 1 593A921F
 P 23750 18350
 F 0 "R75" V 23830 18350 40  0000 C CNN
@@ -2177,7 +2210,7 @@ F 3 "~" H 23750 18350 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R68
+L R R68
 U 1 1 593A93E6
 P 22550 17700
 F 0 "R68" V 22630 17700 40  0000 C CNN
@@ -2188,7 +2221,7 @@ F 3 "~" H 22550 17700 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C41
+L C C41
 U 1 1 593AAC98
 P 23750 17700
 F 0 "C41" H 23750 17800 40  0000 L CNN
@@ -2199,7 +2232,7 @@ F 3 "~" H 23750 17700 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 593ABADD
 P 23750 17050
 F 0 "#PWR?" H 23800 17100 50  0001 C CNN
@@ -2210,7 +2243,7 @@ F 3 "" H -200 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:DIODE-RESCUE-grantrak10 CR13
+L DIODE CR13
 U 1 1 593ACA21
 P 24250 19950
 F 0 "CR13" H 24250 20050 40  0000 C CNN
@@ -2223,7 +2256,7 @@ $EndComp
 Text GLabel 24250 20400 3    60   Input ~ 0
 -COIN
 $Comp
-L grantrak10-rescue:74LS04-RESCUE-grantrak10 A8
+L 74LS04 A8
 U 1 1 593AF36F
 P 24500 19050
 F 0 "A8" H 24695 19165 60  0000 C CNN
@@ -2236,7 +2269,7 @@ $EndComp
 Text GLabel 17600 19750 0    60   Input ~ 0
 P
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 593B0DD8
 P 23750 22150
 F 0 "#PWR?" H 23800 22200 50  0001 C CNN
@@ -2253,7 +2286,7 @@ Q
 Text Notes 20350 21550 0    60   ~ 12
 (pin K)
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 593B9D99
 P 14700 18050
 F 0 "#PWR?" H 14750 18100 50  0001 C CNN
@@ -2264,7 +2297,7 @@ F 3 "" H -9250 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:SW_Push_SPDT-RESCUE-grantrak10 S3
+L SW_Push_SPDT S3
 U 1 1 593BB154
 P 12000 18400
 F 0 "S3" H 12000 18685 50  0000 C CNN
@@ -2275,7 +2308,7 @@ F 3 "" H -3200 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L grantrak10-rescue:SW_Push_SPDT-RESCUE-grantrak10 S1B
+L SW_Push_SPDT S1B
 U 1 1 593BC58B
 P 14350 18450
 F 0 "S1B" H 14350 18735 50  0000 C CNN
@@ -2287,7 +2320,7 @@ F 3 "" H -850 8550 50  0001 C CNN
 $EndComp
 NoConn ~ 14550 18550
 $Comp
-L power:VCC #PWR?
+L VCC #PWR?
 U 1 1 593BD3F6
 P 12300 18050
 F 0 "#PWR?" H 12350 18100 50  0001 C CNN
@@ -2298,7 +2331,7 @@ F 3 "" H -11650 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 593BDA37
 P 12300 18700
 F 0 "#PWR?" H 12350 18750 50  0001 C CNN
@@ -2315,7 +2348,7 @@ Text Notes 12400 18550 0    60   ~ 12
 Text Notes 14750 18350 0    60   ~ 12
 TEST
 $Comp
-L grantrak10-rescue:SW_Push_SPDT-RESCUE-grantrak10 S?
+L SW_Push_SPDT S?
 U 1 1 593C1618
 P 2350 21400
 F 0 "S?" H 2350 21685 50  0000 C CNN
@@ -3711,7 +3744,7 @@ Wire Wire Line
 Connection ~ 2650 21750
 Connection ~ 2650 21100
 $Comp
-L power:GND #PWR?
+L GND #PWR?
 U 1 1 593C3DB8
 P 2050 21700
 F 0 "#PWR?" H 2100 21750 50  0001 C CNN
